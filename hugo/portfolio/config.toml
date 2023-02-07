@@ -1,4 +1,4 @@
-baseURL = 'http://jorangetree.github.io/'
+baseURL = 'https://jorangetree.github.io/'
 languageCode = 'en-us'
 title = "Jose I. Naranjo - Software Developer based in Madrid"
 theme = "ortree-theme"
