@@ -1,4 +1,4 @@
-baseURL = 'https://jorangetree.github.io/'
+baseURL = 'https://jnaranjo.dev/'
 languageCode = 'en-us'
 title = "Jose I. Naranjo - Software Developer based in Madrid"
 theme = "ortree-theme"
@@ -50,10 +50,3 @@ alt = "Wellfound"
 url = "https://angel.co/u/jose-ignacio-naranjo-hernandez"
 
 googleAnalytics = "G-DPT1K56ZDQ"
-
-[privacy]
-  [privacy.googleAnalytics]
-    anonymizeIP = false
-    disable = false
-    respectDoNotTrack = false
-    useSessionStorage = false
