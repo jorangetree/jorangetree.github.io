@@ -1,0 +1,24 @@
+<section id="header" class="container flex place-content-around py-8 text-gray-800">
+    <nav id="company-name" class="container w-fit text-lg">
+        <p>{{ .Site.Title }}</p>
+    </nav>
+    <nav id="nav" class="container w-fit">
+        {{ range .Site.Menus.main }}
+        <a href="{{ .URL }}" class="px-4 text-lg no-underline hover:text-black">
+        {{ if .Pre }}
+        {{ $icon := printf "<i data-feather=\"%s\"></i> " .Pre | safeHTML }}
+        {{ $icon }}
+        {{ end }}
+        {{ $text := print .Name | safeHTML }}
+        {{ $text }}
+        </a>
+        {{ end }}
+    </nav>
+    <div>
+        <ul class="language-list">
+            {{ range $.Site.Home.AllTranslations }}
+            <li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
+            {{ end }}
+        </ul>
+    </div>
+</section>

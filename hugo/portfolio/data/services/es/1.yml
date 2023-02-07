@@ -1,0 +1,8 @@
+image_src: "/images/services/service_mobile_app_dev.svg"
+title: Desarrollo de apps móviles y para web con Flutter
+description: >
+  Construye applicaciones bonitas para cualquier dispositivo iOS o Android usando el mismo código. Porta la app a la web o incluso úsala como aplicación de escritorio en Windows, MacOS y Linux.
+itemize:
+  - Construye la misma aplicaión para todos los dispositivos
+  - Despliega en la web o en el escritorio
+  - Ahorra dinero y tiempo usando un solo código compatible para cualquier dispositivo

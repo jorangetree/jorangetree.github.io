@@ -1,0 +1,48 @@
+<section id="features" class="m-16 p-4">
+
+  <div id="features-title" class="text-3xl text-center text-slate-600">
+    <h1>{{ i18n "services" }}</h1>
+  </div>
+
+  {{ with index .Site.Data.services .Site.Language.Lang }}
+  {{ range $index, $element := . }}
+  <div class="container m-10 p-10 rounded-lg bg-bg-alternative flex items-center place-content-between ">
+    {{ if not (modBool $index 2) }}
+    <div class="container w-1/2">
+      {{ with .image_src }}<img src="{{ . }}" loading="lazy"/>{{ end }}
+    </div>
+    {{ end }}
+    <div class="container w-1/2">
+      <div class="text-2xl py-4">
+        <!-- {{ with .logo_src }}<img class="w-1/4 max-h-36 m-8 float-right" src="{{ . }}" loading="lazy"/>{{ end }} -->
+        <h2>{{ .title }}</h2>
+      </div>
+      <div>
+        <p>{{ .description }}</p>
+      </div>
+      <div>
+        <ul class="list-none my-4">
+          {{ range $indexItem, $elementItem := .itemize }}
+          <li class="flex">
+            <div class="h-0.5">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff4683" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+              </svg>
+            </div>
+            <div class="w-11/12">
+              <p>{{ $elementItem }}</p>
+            </div>
+          </li>
+          {{ end }}
+        </ul>
+      </div>  
+    </div>
+    {{ if (modBool $index 2) }}
+    <div class="container w-1/2">
+      {{ with .image_src }}<img src="{{ . }}" loading="lazy"/>{{ end }}
+    </div>
+    {{ end }}
+  </div>
+  {{ end }}
+  {{ end }}
+</section>

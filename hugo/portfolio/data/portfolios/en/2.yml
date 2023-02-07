@@ -1,0 +1,15 @@
+image_src: "/images/portfolio/panel_vestigios.png"
+title: Traces of the Spanish Civil War
+subtitle: Geolocated catalog of Spanish war vestiges
+descriptions:
+  - Traces of the Spanish Civil War is an app for people interested in history that want to discover places where events occurred during the civil war and still persist today.
+  - The application also has a catalog of geolocated photos from that time period and a description of the street map linked to the conflict.
+itemize:
+  - Over 3000 entries in the map
+  - Vestiges all over the planet. Not just in contemporary Spain boundaries
+  - Users can send entries
+  - Around 20000 downloads
+ios_link: https://apps.apple.com/us/app/vestigios-de-la-guerra-civil/id1537194887
+ios_button:
+android_link: https://play.google.com/store/apps/details?id=com.poisee.vestigios_guerra_civil
+android_button:

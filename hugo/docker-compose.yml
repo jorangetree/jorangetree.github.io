@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  hugo:
+    image: klakegg/hugo:ubuntu
+    ports:
+      - 1313:1313
+    volumes:
+      - ./portfolio:/src
+      - ./bin/tailwindcss:/bin/tailwindcss
+      - ./bin/hugo_server_with_tailwindcss_transpile:/bin/hugo_server_with_tailwindcss_transpile
+    entrypoint: ["hugo_server_with_tailwindcss_transpile", "/src/themes/ortree-theme/assets/css"]

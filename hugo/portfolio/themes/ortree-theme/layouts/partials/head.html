@@ -1,0 +1,14 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{ template "_internal/google_analytics.html" . }}
+
+    {{ "<!-- template main css file -->" | safeHTML }}
+    {{ $styles := resources.Get "css/style.css" }}
+    <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
+  
+    {{ $title := print .Site.Title " | " .Title }}
+    {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+    <title>{{ $title }}</title>
+</head>
