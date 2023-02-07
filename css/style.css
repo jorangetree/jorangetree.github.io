@@ -563,10 +563,6 @@ h3{
   }
 }
 
-.fixed{
-  position: fixed;
-}
-
 .relative{
   position: relative;
 }
@@ -975,10 +971,6 @@ h3{
 
 .text-opacity-100{
   --tw-text-opacity: 1;
-}
-
-.underline{
-  text-decoration-line: underline;
 }
 
 .no-underline{
