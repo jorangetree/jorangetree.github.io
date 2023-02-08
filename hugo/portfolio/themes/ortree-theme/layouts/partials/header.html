@@ -1,8 +1,8 @@
-<section id="header" class="container flex place-content-around py-8 text-gray-800">
-    <nav id="company-name" class="container w-fit text-lg">
+<section id="header" class="flex justify-between py-8 text-gray-800">
+    <nav id="company-name" class="w-1/3 text-lg text-left">
         <p>{{ .Site.Title }}</p>
     </nav>
-    <nav id="nav" class="container w-fit">
+    <nav id="nav" class="w-fit mx-auto">
         {{ range .Site.Menus.main }}
         <a href="{{ .URL }}" class="px-4 text-lg no-underline hover:text-black">
         {{ if .Pre }}
@@ -14,8 +14,8 @@
         </a>
         {{ end }}
     </nav>
-    <div>
-        <ul class="language-list">
+    <div class="w-1/3 text-right">
+        <ul>
             {{ range $.Site.Home.AllTranslations }}
             <li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
             {{ end }}
