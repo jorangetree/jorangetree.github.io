@@ -563,6 +563,10 @@ h3{
   }
 }
 
+.absolute{
+  position: absolute;
+}
+
 .relative{
   position: relative;
 }
@@ -633,6 +637,10 @@ h3{
 
 .flex{
   display: flex;
+}
+
+.contents{
+  display: contents;
 }
 
 .h-4{
