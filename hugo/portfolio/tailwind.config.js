@@ -12,6 +12,7 @@ module.exports = {
     extend: {
       colors: {
         'bg-alternative': '#f3ebe9',
+        'primary': '#0D7E94'
       },
     }
   },
