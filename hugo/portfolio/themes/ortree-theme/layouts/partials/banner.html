@@ -1,18 +1,18 @@
 <section id="banner" class="p-4 sm:m-4 md:m-8 lg:m-16">
 
-  <div id="slideshow" class="flex mx-auto place-content-center place-items-center sm:h-auto md:h-96 max-w-screen-xl">
+  <div id="slideshow" class="mx-auto place-content-center place-items-center lg:flex sm:h-auto md:h-96 max-w-screen-xl">
     <div id="button_prev" class="hidden md:block">
       <button class="hover:text-cyan-800" onclick="prevSlide()">&#10094;</a>
     </div>
   
     {{ with index .Site.Data.banners .Site.Language.Lang }}
     {{ range . }}
-    <div class="banner_entry none block">
+    <div class="banner_entry block">
       <div class="sm:flex-initial md:flex place-items-center place-content-center">
         <div class="mx-auto w-3/5 lg:w-1/3" > <!-- image -->
-          {{ with .logo_src }}<img class="object-cover" src="{{ . }}" loading="lazy"/>{{ end }}
+          {{ with .logo_src }}<img class="object-cover rounded-full" src="{{ . }}" loading="lazy"/>{{ end }}
         </div>
-        <div class="sm:w-1/2 lg:w-1/2">
+        <div class="my-4 sm:w-1/2 lg:w-1/2">
           <div class="text-center"> <!-- title -->
             <p class="font-heading text-3xl xl:text-4xl">{{ .title }}</p>
           </div>
@@ -35,10 +35,10 @@
     </div>  
   </div>
 
-  <div id="slideshow_dots" class="hidden md:block flex w-fit rounded-3xl bg-slate-200 p-1">
+  <div id="slideshow_dots" class="hidden mx-auto md:flex w-fit rounded-3xl bg-slate-200 p-1">
     {{ with index .Site.Data.banners .Site.Language.Lang }}
     {{ range $index, $element := . }}
-    <span class="slideshow_dot cursor-pointer m-2 w-4 h-4 hover:bg-yellow-600 bg-slate-300 rounded-full" onclick="moveToSlide({{ $index }})"></span>
+    <div id="slideshow_dot_{{ $index }}"class="cursor-pointer p-2 m-2 w-4 h-4 hover:bg-yellow-600 bg-slate-800 rounded-full" onclick="moveToSlide({{ $index }})"></div>
     {{ end }}
     {{ end }}
   </div>
