@@ -6,15 +6,6 @@ module.exports = {
       sans: ["Imprima", "sans-serif"],
       heading: ["Raleway", "sans-serif"],
     },
-    fontSize: {
-      sm: '1rem',
-      base: '1.25rem',
-      xl: '1.50rem',
-      '2xl': '2rem',
-      '3xl': '2.5rem',
-      '4xl': '3.5rem',
-      '5xl': '5rem',
-    },
     container: {
       center: true,
     },
