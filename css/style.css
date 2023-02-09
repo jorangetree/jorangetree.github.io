@@ -1031,6 +1031,10 @@ h3{
 }
 
 @media (min-width: 640px){
+  .sm\:float-none{
+    float: none;
+  }
+
   .sm\:m-4{
     margin: 1rem;
   }
@@ -1045,6 +1049,11 @@ h3{
 
   .sm\:w-1\/2{
     width: 50%;
+  }
+
+  .sm\:w-fit{
+    width: -moz-fit-content;
+    width: fit-content;
   }
 
   .sm\:w-2\/3{
@@ -1102,6 +1111,11 @@ h3{
 
   .lg\:flex{
     display: flex;
+  }
+
+  .lg\:h-fit{
+    height: -moz-fit-content;
+    height: fit-content;
   }
 
   .lg\:w-2\/5{
