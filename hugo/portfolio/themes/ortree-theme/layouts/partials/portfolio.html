@@ -1,30 +1,13 @@
-<section id="portfolio" class="m-16 p-4">
+<section id="portfolio" class="p-4 sm:m-4 md:m-8 lg:m-16">
 
-  <div id="portfolio-title" class="text-3xl text-center text-slate-600">
-    <h1>{{ i18n "portfolio" }}</h1>
+  <div id="portfolio-title" class="mx-auto text-center text-slate-600">
+    <p class="font-heading text-2xl">{{ i18n "portfolio" }}</p>
   </div>
 
   {{ with index .Site.Data.portfolios .Site.Language.Lang }}
   {{ range . }}
-  <div class="container m-10 p-10 rounded-lg bg-red-100 flex items-center place-content-between ">
-    <div class="items-center w-3/5">
-      <div>
-        {{ with .image_src }}<img src="{{ . }}" loading="lazy"/>{{ end }}
-      </div>
-      <div class="flex items-center my-2"> <!-- buttons -->
-        {{ if .android_link }}
-        <div class="w-1/6 mr-2">
-          {{ with .android_link }}<a href="{{ . }}"><img alt='Get it on Google Play' src="/stores/android_badge.webp"/></a>{{ end }}
-        </div>
-        {{ end }}
-        {{ if .ios_link }}
-        <div class="w-1/6 mr-2">
-          {{ with .ios_link }}<a href="{{ . }}"><img src="/stores/ios_badge.webp" alt="Download on the App Store"></a>{{ end }}
-        </div>
-        {{ end }}
-      </div>
-    </div>
-    <div class="container w-2/5 px-10">
+  <div class="mx-auto rounded-lg bg-bg-alternative items-center place-content-between m-10 p-10 flex-none max-w-6xl">
+    <div class="px-10">
       <div class="text-2xl py-4">
         <h2>{{ .title }}</h2>
       </div>
@@ -55,6 +38,24 @@
         </ul>
       </div>  
     </div>
+    <div class="items-center">
+      <div>
+        {{ with .image_src }}<img src="{{ . }}" loading="lazy"/>{{ end }}
+      </div>
+      <div class="flex items-center my-2"> <!-- buttons -->
+        {{ if .android_link }}
+        <div class="sm:w-1/4 md:w-1/6 lg:w-1/8 mr-2">
+          {{ with .android_link }}<a href="{{ . }}"><img class="object-fill" alt='Get it on Google Play' src="/stores/android_badge.webp"/></a>{{ end }}
+        </div>
+        {{ end }}
+        {{ if .ios_link }}
+        <div class="sm:w-1/4 md:w-1/6 lg:w-1/8 mr-2">
+          {{ with .ios_link }}<a href="{{ . }}"><img class="object-fill" src="/stores/ios_badge.webp" alt="Download on the App Store"></a>{{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </div>
+
   </div>
   {{ end }}
   {{ end }}
