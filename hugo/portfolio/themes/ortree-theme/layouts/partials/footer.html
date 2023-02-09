@@ -3,8 +3,9 @@
         <div>
             <p>© Copyright {{ now.Format "2006"}} Jose Ignacio Naranjo</p>
             <p>Made by myself using Hugo and Tailwindcss</p>
+            <p>✉️ ji@jnaranjo.dev</p>
         </div>
-        <div class="flex place-content-around bg-white rounded-full">
+        <div class="place-content-around bg-white rounded-full sm:w-fit sm:float-none lg:h-fit lg:flex">
               {{ range .Site.Params.socialIcon }}
               <div class="m-2">
                 <a href="{{ .url }}" target="#"><img
@@ -15,7 +16,7 @@
                   /></a>    
               </div>
               {{ end }}
-        </div>    
+        </div>
     </div>
 </footer>
 
