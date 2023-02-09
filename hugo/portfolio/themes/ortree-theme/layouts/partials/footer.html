@@ -1,9 +1,10 @@
-<footer id="footer" class="container w-full bg-slate-800 text-slate-50 rounded-t-3xl">
-    <div class="flex place-content-between mx-8 pt-8">
+<footer id="footer" class="bg-slate-800 text-slate-50 px-4 py-16">
+    <div class="flex place-content-around">
         <div>
             <p>© Copyright {{ now.Format "2006"}} Jose Ignacio Naranjo</p>
+            <p>Made by myself using Hugo and Tailwindcss</p>
         </div>
-        <div class="flex place-content-around bg-white">
+        <div class="flex place-content-around bg-white rounded-full">
               {{ range .Site.Params.socialIcon }}
               <div class="m-2">
                 <a href="{{ .url }}" target="#"><img
