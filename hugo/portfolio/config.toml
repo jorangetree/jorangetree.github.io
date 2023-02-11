@@ -1,13 +1,13 @@
 baseURL = 'https://jnaranjo.dev/'
 languageCode = 'en-us'
-title = "Jose I. Naranjo - Software Developer based in Madrid"
+title = "Jose I. Naranjo - Expert Software Developer in Madrid"
 theme = "ortree-theme"
 
 defaultContentLanguage = 'en'
 [languages]
   [languages.es]
     languageName = 'Español'
-    title = 'Jose I. Naranjo - Programador en Madrid'
+    title = 'Jose I. Naranjo - Experto en desarrollo software en Madrid'
     weight = 10
     [languages.de.menu]
 [[languages.es.menu.main]]
