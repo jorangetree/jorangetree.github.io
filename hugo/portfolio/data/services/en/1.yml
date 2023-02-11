@@ -1,8 +1,8 @@
 image_src: "/images/services/service_mobile_app_dev.svg"
 title: Mobile and Web apps development using Flutter
 description: >
-  Build beautiful apps to run on any device iOS or Android devices using the same codebase. Make the app work on the web or even on your desktop (Windows, MacOS and Linux).
+  Build beautiful apps that run seamlessly on any iOS or Android device using a single codebase. Extend the app's functionality to the web and even your desktop computers running Windows, MacOS, or Linux.
 itemize:
   - Build the exact same app for all devices
-  - Deploy it in the web or in the desktop (Windows, MacOS and Linux)
+  - Deploy it on the web or desktop (Windows, MacOS and Linux)
   - Save money and time with a single codebase for a multi-device compatible app
