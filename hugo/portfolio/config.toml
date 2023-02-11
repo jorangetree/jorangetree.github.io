@@ -12,15 +12,15 @@ defaultContentLanguage = 'en'
     [languages.de.menu]
 [[languages.es.menu.main]]
       name = 'Inicio'
-      url = '/'
+      url = '/es/'
       weight = 1
 [[languages.es.menu.main]]
       name = "Sobre mí"
-      url = "about/"
+      url = "/es/about/"
       weight = 2
 [[languages.es.menu.main]]
       name = "Contacto"
-      url = "#contact"
+      url = "/es/#contact"
       weight = 3
   [languages.en]
     languageName = 'English'
@@ -32,11 +32,11 @@ defaultContentLanguage = 'en'
       weight = 1
 [[languages.en.menu.main]]
       name = "About Me"
-      url = "about/"
+      url = "/about/"
       weight = 2
 [[languages.en.menu.main]]
       name = "Contact"
-      url = "#contact"
+      url = "/#contact"
       weight = 3
 
 [[params.socialIcon]]

@@ -1,2 +1,13 @@
-<h1>{{ .Title }}</h1>
-<p>{{ .Content }}</p>
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <body>
+        <div id="page" class="w-full">
+        {{- partial "header.html" . -}}
+        <div id="page" class="mx-auto max-w-screen-2xl">
+        {{ .Content }}
+        </div>
+        {{- partial "footer.html" . -}}
+        </div>
+    </body>
+</html>

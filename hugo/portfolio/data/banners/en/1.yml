@@ -2,5 +2,5 @@ logo_src: "/images/banner/banner_3.png"
 title: Hi there! 👋 I am Jose Ignacio
 description: >
     I am a computer engineer based in Madrid
-button:
-    About me
+button: About me
+button_url: "/about/"

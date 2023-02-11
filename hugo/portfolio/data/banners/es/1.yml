@@ -2,5 +2,5 @@ logo_src: "/images/banner/banner_3.png"
 title: ¡¡Hola!! 👋 Soy Jose Ignacio
 description: >
     Ingeniero en Informática trabajando desde Madrid
-button:
-    Sobre mí
+button: Sobre mí
+button_url: "/es/about/"
