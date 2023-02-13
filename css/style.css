@@ -687,10 +687,6 @@ h3{
   max-width: 28rem;
 }
 
-.flex-none{
-  flex: none;
-}
-
 .cursor-pointer{
   cursor: pointer;
 }
@@ -836,9 +832,9 @@ h3{
   padding-bottom: 4rem;
 }
 
-.px-10{
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+.px-1{
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 .text-left{
@@ -1150,6 +1146,11 @@ h3{
 
   .lg\:w-1\/2{
     width: 50%;
+  }
+
+  .lg\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 }
 
