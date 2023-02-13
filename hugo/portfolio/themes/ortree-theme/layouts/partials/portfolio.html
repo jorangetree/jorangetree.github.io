@@ -6,8 +6,8 @@
 
   {{ with index .Site.Data.portfolios .Site.Language.Lang }}
   {{ range . }}
-  <div class="mx-auto rounded-lg bg-bg-alternative items-center place-content-between m-10 p-10 flex-none max-w-6xl">
-    <div class="px-10">
+  <div class="mx-auto rounded-lg bg-bg-alternative items-center place-content-between m-10 p-10 sm:flex-none lg:flex max-w-6xl">
+    <div class="px-1 lg:px-10">
       <div class="text-2xl py-4">
         <h2>{{ .title }}</h2>
       </div>
@@ -25,7 +25,7 @@
         <ul class="list-none my-4">
           {{ range $index, $element := .itemize }}
           <li class="flex">
-            <div class="h-0.5">
+            <div>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff4683" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
               </svg>
