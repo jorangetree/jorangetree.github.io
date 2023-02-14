@@ -7,7 +7,7 @@
   
     {{ with index .Site.Data.banners .Site.Language.Lang }}
     {{ range . }}
-    <div class="banner_entry">
+    <div class="banner_entry sm:block md:hidden">
       <div class="sm:flex-initial md:flex place-items-center place-content-stretch">
         <div class="mx-auto w-3/5 lg:w-2/5" > <!-- image -->
           {{ with .logo_src }}<img class="h-auto max-w-full rounded-full" src="{{ . }}" loading="lazy"/>{{ end }}

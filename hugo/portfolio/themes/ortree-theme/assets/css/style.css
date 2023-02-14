@@ -1057,6 +1057,10 @@ h3{
     margin: 1rem;
   }
 
+  .sm\:block{
+    display: block;
+  }
+
   .sm\:flex{
     display: flex;
   }
@@ -1107,6 +1111,10 @@ h3{
 
   .md\:flex{
     display: flex;
+  }
+
+  .md\:hidden{
+    display: none;
   }
 
   .md\:h-96{
