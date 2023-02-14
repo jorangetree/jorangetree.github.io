@@ -27,14 +27,15 @@ function showSlides() {
     let i;
     let slides = document.getElementsByClassName("banner_entry");
 
+    if (slideIndex >= slides.length || slideIndex < 0) {slideIndex = 0}
     for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+      if (i == slideIndex) {
+        slides[i].style.display = "block";
+      } else {
+        slides[i].style.display = "none";
+      }
     }
-    if (slides.length > 0) {
-      if (slideIndex >= slides.length || slideIndex < 0) {slideIndex = 0}
-      slides[slideIndex].style.display = "block";
-      timeoutId = setTimeout(function () { slideIndex++; showSlides(); }, frequency);
-    }
+    timeoutId = setTimeout(function () { slideIndex++; showSlides(); }, frequency);
   } else {
     let i;
     let slides = document.getElementsByClassName("banner_entry");
